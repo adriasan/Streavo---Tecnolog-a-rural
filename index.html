@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streavo - Tu partner tecnológico local</title>
+    <meta name="description" content="Soluciones informáticas, soporte IT, desarrollo web y Streavo Cloud para PYMES.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: { DEFAULT: '#F9F8F3', dark: '#EBE9DD' },
+                        brand: { DEFAULT: '#1A4D2E', light: '#2ECC71', dark: '#133921' },
+                        typography: { DEFAULT: '#2C3E50', light: '#4A5568' },
+                        accent: { DEFAULT: '#F5B041' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Poppins', 'sans-serif'] },
+                    backgroundImage: {
+                        'grid-pattern': "url('data:image/svg+xml,%3Csvg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 0h40v40H0V0zm20 20h20v20H20V20zM0 20h20v20H0V20z\" fill=\"%23D9D7CE\" fill-opacity=\"0.1\" fill-rule=\"evenodd\"/%3E%3C/svg%3E')",
+                        'dot-pattern': "radial-gradient(#D9D7CE 1px, transparent 1px)",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F9F8F3; color: #2C3E50; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        .bg-dots { background-image: radial-gradient(#d1cfc5 1px, transparent 1px); background-size: 24px 24px; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Poppins', sans-serif; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .animate-float-delayed { animation: float 6s ease-in-out infinite 3s; }
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-12px) rotate(1deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .illustration-blend { mix-blend-mode: multiply; }
+    </style>
+</head>
+<body class="bg-cream text-typography relative overflow-x-hidden selection:bg-brand selection:text-white">
+
+    <div class="fixed inset-0 bg-dots z-[-2] opacity-60 pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-cream/80 backdrop-blur-lg border-b border-gray-200/50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="flex items-center cursor-pointer group">
+                    <img src="https://imgur.com/8odUkhq.png" alt="Streavo Logo" class="h-8 w-auto group-hover:scale-105 transition-transform duration-300">
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-typography font-medium hover:text-brand transition-colors relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand hover:after:w-full after:transition-all">Inicio</a>
+                    <a href="servicios.html" class="text-typography font-medium hover:text-brand transition-colors relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand hover:after:w-full after:transition-all">Servicios</a>
+                    <a href="#contacto" class="text-typography font-medium hover:text-brand transition-colors relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand hover:after:w-full after:transition-all">Contacto</a>
+                    
+                    <!-- Streavo Cloud CTA -->
+                    <a href="streavocloud.html" class="group flex items-center gap-2 border-2 border-brand/20 bg-white px-5 py-2 rounded-full text-brand font-semibold hover:bg-brand hover:text-white hover:border-brand shadow-sm hover:shadow-lg transition-all duration-300">
+                        <svg class="w-5 h-5 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                        </svg>
+                        <span>Streavo Cloud</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 relative min-h-screen flex items-center">
+        <div class="absolute top-20 right-10 w-96 h-96 bg-brand/5 rounded-full blur-3xl z-[-1]"></div>
+        <div class="absolute bottom-10 left-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl z-[-1]"></div>
+
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 relative w-full">
+            
+            <div class="w-full lg:w-1/2 flex flex-col justify-center items-start space-y-8 z-10 reveal">
+                <div class="inline-flex items-center px-4 py-2 bg-white rounded-full border border-gray-200 text-typography text-sm font-semibold tracking-wide shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-brand-light mr-2 relative">
+                        <span class="absolute inline-flex h-full w-full rounded-full bg-brand-light opacity-75 animate-ping"></span>
+                    </span>
+                    Artesanía Digital • Soporte Humano
+                </div>
+                
+                <h1 class="text-5xl lg:text-7xl font-heading font-bold text-typography leading-[1.1]">
+                    Tu partner <br/>tecnológico <span class="relative inline-block text-brand">local.<img src="data:image/svg+xml;utf8,%3Csvg viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 15 Q 50 0 100 15' stroke='%232ECC71' stroke-width='4' fill='transparent'/%3E%3C/svg%3E" class="absolute -bottom-2 left-0 w-full h-auto opacity-50 z-[-1]" alt=""/></span><br>
+                    Fiabilidad global.
+                </h1>
+                
+                <p class="text-lg lg:text-xl text-typography-light font-medium max-w-lg leading-relaxed">
+                    Soluciones informáticas avanzadas para PYMES y entornos rurales. Cuidamos de tu infraestructura tecnológica para que tú puedas centrarte en tu negocio tradicional.
+                </p>
+                
+                <div class="pt-4 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                    <a href="#contacto" class="bg-brand text-white px-8 py-4 rounded-xl font-semibold hover:bg-brand-dark hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex items-center justify-center gap-2 group">
+                        Hablemos de tu proyecto
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="w-full lg:w-1/2 relative flex justify-center lg:justify-end mt-12 lg:mt-0 reveal reveal-delay-200">
+                <div class="absolute inset-0 bg-white/40 backdrop-blur-md border border-white rounded-[3rem] transform rotate-3 scale-95 z-0 shadow-xl"></div>
+                <div class="relative z-10 w-full max-w-lg p-6 animate-float">
+                    <img src="./assets/hero_illustration.png" alt="Soporte IT Ilustración" class="w-full h-auto illustration-blend">
+                </div>
+                <div class="absolute top-4 -left-4 md:top-10 md:-left-10 bg-white p-3 md:p-4 rounded-xl shadow-lg border border-brand/10 animate-float-delayed z-20 flex items-center gap-2 md:gap-3">
+                    <div class="w-2.5 h-2.5 md:w-3 md:h-3 bg-brand-light rounded-full"></div>
+                    <span class="text-xs md:text-sm font-bold font-heading whitespace-nowrap">Atención Humana</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <h2 class="font-heading font-bold text-4xl mb-6">Un ecosistema de soluciones</h2>
+                <p class="text-lg text-typography-light">Llevamos la ingeniería de software y el soporte de alto nivel al pulso de tu negocio. Sin tecnicismos vacíos, solo tecnología que resuelve problemas reales.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+                
+                <div class="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm hover:shadow-2xl hover:border-brand/30 hover:-translate-y-2 transition-all duration-500 group reveal">
+                    <div class="w-16 h-16 bg-cream rounded-2xl flex items-center justify-center mb-8 group-hover:bg-brand transition-colors duration-500">
+                        <svg class="w-8 h-8 text-brand group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl mb-4">Asesoramiento IT</h3>
+                    <p class="text-typography-light leading-relaxed">Auditorías honestas. Evaluamos el estado tecnológico de tu negocio para trazar una ruta clara hacia la eficiencia. Te decimos lo que de verdad necesitas.</p>
+                </div>
+
+                <div class="lg:col-span-1 rounded-3xl flex items-center justify-center -order-1 lg:order-none mb-8 lg:mb-0 reveal reveal-delay-200 relative">
+                    <div class="absolute inset-0 bg-brand-light/5 rounded-full blur-xl filter"></div>
+                    <img src="./assets/services_illustration.png" alt="Servicios Tech" class="w-full max-w-sm h-auto illustration-blend animate-float-delayed relative z-10">
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm hover:shadow-2xl hover:border-brand/30 hover:-translate-y-2 transition-all duration-500 group reveal reveal-delay-400">
+                    <div class="w-16 h-16 bg-cream rounded-2xl flex items-center justify-center mb-8 group-hover:bg-brand transition-colors duration-500">
+                        <svg class="w-8 h-8 text-brand group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl mb-4">Software a Medida</h3>
+                    <p class="text-typography-light leading-relaxed">Olvídate de pagar suscripciones por herramientas que usan el 10% de su capacidad. Creamos el software exacto que tu operativa diaria requiere.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-brand rounded-3xl p-10 flex flex-col md:flex-row items-center justify-between text-white shadow-xl overflow-hidden relative reveal">
+                <div class="absolute right-0 top-1/2 transform -translate-y-1/2 flex items-center justify-center z-0">
+                    <div class="w-96 h-96 border border-white/10 rounded-full absolute animate-[ping_4s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
+                    <div class="w-80 h-80 border border-white/20 rounded-full absolute"></div>
+                </div>
+
+                <div class="relative z-10 md:w-2/3 mb-8 md:mb-0">
+                    <h3 class="font-heading font-bold text-3xl mb-4">Soporte y Mantenimiento</h3>
+                    <p class="text-cream/90 text-lg">Olvídate de los chatbots y tickets eternos. Atención cercana, rápida y humana de técnicos en plantilla. Si algo no funciona, somos el primer escudo.</p>
+                </div>
+                <div class="relative z-10">
+                    <a href="https://api.whatsapp.com/send/?phone=34623935683&text=Hola%21+Vengo+de+la+Web+Streavo+y+me+gustar%C3%ADa+informaci%C3%B3n.&type=phone_number&app_absent=0" target="_blank" class="bg-white text-brand px-8 py-4 rounded-xl font-bold hover:bg-cream-dark transition-colors inline-block text-center whitespace-nowrap">Contactar con el equipo</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Streavo Cloud Teaser Bridge Section -->
+    <!-- Removed full explanations and mantra, made into a bridge banner -->
+    <section class="py-16 bg-cream-dark border-y border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 reveal flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 text-brand font-bold uppercase tracking-widest text-sm mb-3">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                    Ecosistema Propio
+                </div>
+                <h3 class="font-heading font-bold text-3xl md:text-4xl text-typography mb-4">Streavo Cloud</h3>
+                <p class="text-typography-light text-lg">La potencia de un gigante. Gestionamos el aprovisionamiento de las mejores granjas de servidores del mundo para tu negocio local.</p>
+            </div>
+            
+            <div>
+                <a href="streavocloud.html" class="flex items-center gap-3 bg-brand text-white px-8 py-4 rounded-full font-bold hover:bg-brand-dark hover:scale-105 transition-all shadow-md">
+                    Descubrir Cloud
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestro ADN Section -->
+    <section id="adn" class="py-32 relative overflow-hidden bg-white">
+        <!-- Abstract Shapes -->
+        <div class="absolute top-0 right-0 w-[40rem] h-[40rem] bg-brand/[0.03] rounded-full blur-3xl -mr-20 -mt-20"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-16">
+            
+            <div class="w-full lg:w-1/2 reveal">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-cream rounded-3xl transform -rotate-3 z-0"></div>
+                    <img src="./assets/values_illustration.png" alt="Atención al cliente y Soporte Humano" class="relative z-10 w-full h-auto p-4 round-3xl illustration-blend animate-float">
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 text-left reveal reveal-delay-200">
+                <h2 class="font-heading font-bold text-4xl lg:text-5xl mb-6">Nuestra filosofía artesana</h2>
+                
+                <p class="text-xl text-typography-light leading-relaxed mb-8">
+                    Una caída del servidor, un ataque informático o una simple red mal configurada pueden paralizar tu negocio durante días. Entendemos ese peligro. Nacimos para hacer que la tecnología deje de ser tu punto más vulnerable y se convierta en una ventaja competitiva.
+                </p>
+                <p class="text-lg text-typography-light leading-relaxed">
+                    Estamos arraigados en el tejido local. Por eso apostamos por una dupla poco común: la empatía humana de un comercio cercano y el músculo técnico de una organización global. Somos las manos expertas que cuidan de tu ecosistema.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contacto" class="py-24 bg-brand relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjMWFlMzVlIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMOCA4Wk04IDBMMCA4WiIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD4KPC9zdmc+')]"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10 reveal">
+            <h2 class="font-heading font-bold text-4xl md:text-5xl text-white mb-6">Eleva el nivel técnico de tu negocio.</h2>
+            <p class="text-cream text-xl font-medium mb-10 max-w-2xl mx-auto">Escríbenos, tomamos un café y vemos cómo podemos ayudar a tu proyecto a ser más eficiente de forma real y honesta.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://api.whatsapp.com/send/?phone=34623935683&text=Hola%21+Vengo+de+la+Web+Streavo+y+me+gustar%C3%ADa+informaci%C3%B3n.&type=phone_number&app_absent=0" target="_blank" class="bg-white text-brand px-10 py-5 rounded-xl font-bold hover:bg-cream shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-lg w-full sm:w-auto">
+                    Contactar con el equipo
+                </a>
+                <span class="text-cream/80 text-lg mt-4 sm:mt-0">o llámanos al <strong class="text-white text-xl">623 93 56 83</strong> <br class="sm:hidden"> <span class="text-sm opacity-80">(15:00 a 20:00, L-V)</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#111827] pt-20 pb-10 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <!-- Branding -->
+                <div class="col-span-1 md:col-span-1">
+                    <a href="#" class="flex items-center mb-6">
+                        <img src="https://i.imgur.com/5xDYiiz.png" alt="Streavo Logo" class="h-10 w-auto">
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Construimos el puente entre la infraestructura tecnológica avanzada y las PYMES, con dedicación artesana y visión global.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-heading font-semibold text-white mb-5 text-lg">Navegación</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#inicio" class="hover:text-brand-light transition-colors flex items-center gap-2"><div class="w-1 h-1 rounded-full bg-transparent hover:bg-brand-light"></div>Inicio</a></li>
+                        <li><a href="servicios.html" class="hover:text-brand-light transition-colors flex items-center gap-2"><div class="w-1 h-1 rounded-full bg-transparent hover:bg-brand-light"></div>Servicios</a></li>
+                        <li><a href="#contacto" class="hover:text-brand-light transition-colors flex items-center gap-2"><div class="w-1 h-1 rounded-full bg-transparent hover:bg-brand-light"></div>Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-heading font-semibold text-white mb-5 text-lg">Legal</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="politica-privacidad.html" class="hover:text-brand-light transition-colors">Política de Privacidad</a></li>
+                        <li><a href="aviso-legal.html" class="hover:text-brand-light transition-colors">Aviso Legal</a></li>
+                        <li><a href="cookies.html" class="hover:text-brand-light transition-colors">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800/80 pt-8 mt-4 flex justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm font-medium">
+                    &copy; 2025-2026 Streavo. Diseñado con ♥ en el Penedès.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CSS Scroll Animation Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-12');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const revealElements = document.querySelectorAll('.reveal');
+            revealElements.forEach(el => {
+                el.classList.add('opacity-0', 'translate-y-12', 'transition-all', 'duration-[800ms]', 'ease-out');
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

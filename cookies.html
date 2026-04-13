@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Cookies - Streavo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: { DEFAULT: '#F9F8F3', dark: '#EBE9DD' },
+                        brand: { DEFAULT: '#1A4D2E', light: '#2ECC71', dark: '#133921' },
+                        typography: { DEFAULT: '#2C3E50', light: '#4A5568' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Poppins', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F9F8F3; color: #2C3E50; font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-cream text-typography relative overflow-x-hidden selection:bg-brand selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-cream/80 backdrop-blur-lg border-b border-gray-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center cursor-pointer group">
+                    <img src="https://i.imgur.com/5xDYiiz.png" alt="Streavo Logo" class="h-8 w-auto">
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-typography font-medium hover:text-brand transition-colors">← Volver al Inicio</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24 md:pt-48 md:pb-32 px-4 max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-heading font-bold mb-10 text-brand">Política de Cookies</h1>
+        
+        <div class="prose prose-lg text-typography-light space-y-6">
+            <p>En <strong>Streavo</strong> valoramos tu privacidad tanto como la tecnología limpia. Es por eso que nuestra web está diseñada para ser lo más respetuosa posible con tus datos.</p>
+
+            <h2 class="text-2xl font-bold text-typography mt-10 mb-4">¿Qué cookies utilizamos? Nosotros no guardamos cookies.</h2>
+            <p>Esta página web no utiliza cookies propias de seguimiento, rastreo publicitario ni recolección de perfiles de navegación. <strong>Nosotros no almacenamos cookies para vender tus datos ni mostrarte publicidad intrusiva.</strong></p>
+
+            <h2 class="text-2xl font-bold text-typography mt-10 mb-4">Cookies Exentas (Técnicas) o de Terceros</h2>
+            <p>Es posible que en tu navegador se instalen algunas de estas cookies en formato puramente técnico:</p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li><strong>Cookies estrictamente necesarias:</strong> Aquellas generadas por el propio servidor de alojamiento (CDN o plataforma de hosting) requeridas únicamente para el enrutamiento de la web, la seguridad (protección contra ataques DDoS) y carga de imágenes.</li>
+                <li><strong>Cookies de Análisis de Google (Terceros):</strong> De utilizar herramientas globales de medición (como Google Analytics o dependencias de Google Workspace), estas cookies son propiedad de Google y son ellos quienes procesan dichos datos genéricos estadísticos de tráfico. Puedes adaptar su comportamiento en tu propio panel de preferencias de Google o en tu navegador web.</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold text-typography mt-10 mb-4">Consentimiento y control</h2>
+            <p>Sabiendo que no instalamos cookies de <em>tracking</em> propias, navegar por esta web se considera una acción transparente. Si deseas eliminar en seco cualquier rastro técnico que el navegador guarde en su caché local (por las imágenes y archivos descargados), puedes hacerlo directamente a través de los ajustes de Privacidad y Seguridad de tu propio navegador web (Chrome, Safari, Firefox, Edge).</p>
+
+            <p class="mt-10 italic">Última actualización: Abril de 2026</p>
+        </div>
+    </main>
+
+    <footer class="bg-[#111827] py-10 border-t border-gray-800 text-center">
+        <p class="text-gray-500 text-sm font-medium">
+            &copy; 2025-2026 Streavo. Diseñado con ♥ en el Penedès.
+        </p>
+    </footer>
+
+</body>
+</html>

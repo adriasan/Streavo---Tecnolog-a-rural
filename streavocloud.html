@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streavo Cloud - Arquitectura Global Gestionada</title>
+    <meta name="description" content="Nuestra división de infraestructura gestionada para PYMES. Potencia, CDN y seguridad sin dolores de cabeza.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: { DEFAULT: '#F9F8F3', dark: '#EBE9DD' },
+                        brand: { DEFAULT: '#1A4D2E', light: '#2ECC71', dark: '#133921' },
+                        typography: { DEFAULT: '#2C3E50', light: '#4A5568' },
+                        accent: { DEFAULT: '#F5B041' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Poppins', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F9F8F3; color: #2C3E50; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        .bg-dots { background-image: radial-gradient(#d1cfc5 1px, transparent 1px); background-size: 24px 24px; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Poppins', sans-serif; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .animate-float-delayed { animation: float 6s ease-in-out infinite 3s; }
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-12px) rotate(1deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .illustration-blend { mix-blend-mode: multiply; }
+    </style>
+</head>
+<body class="bg-cream text-typography relative overflow-x-hidden selection:bg-brand selection:text-white">
+
+    <div class="fixed inset-0 bg-dots z-[-2] opacity-60 pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-cream/80 backdrop-blur-lg border-b border-gray-200/50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center cursor-pointer group">
+                    <img src="https://imgur.com/8odUkhq.png" alt="Streavo Logo" class="h-8 w-auto group-hover:scale-105 transition-transform duration-300">
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-typography font-medium hover:text-brand transition-colors relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand hover:after:w-full after:transition-all">← Volver al Inicio</a>
+                    <a href="#infraestructura" class="text-typography font-medium hover:text-brand transition-colors relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand hover:after:w-full after:transition-all">Infraestructura</a>
+                    <a href="#manifiesto" class="text-typography font-medium hover:text-brand transition-colors relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand hover:after:w-full after:transition-all">Nuestro Mantra</a>
+                    
+                    <a href="https://api.whatsapp.com/send/?phone=34623935683&text=Hola%21+Vengo+de+la+Web+Streavo+y+me+gustar%C3%ADa+informaci%C3%B3n.&type=phone_number&app_absent=0" target="_blank" class="group flex items-center gap-2 border-2 border-brand bg-brand px-5 py-2 rounded-full text-white font-semibold hover:bg-brand-dark transition-all duration-300">
+                        Contactar con el equipo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cloud Hero Section -->
+    <section class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 relative flex items-center">
+        <div class="absolute top-20 right-10 w-96 h-96 bg-brand/5 rounded-full blur-3xl z-[-1]"></div>
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative w-full">
+            
+            <div class="w-full lg:w-1/2 flex flex-col justify-center items-start space-y-8 z-10 reveal">
+                <div class="inline-flex items-center space-x-2 bg-cream-dark px-4 py-2 rounded-full border border-gray-200 text-brand font-bold text-sm">
+                    <span class="w-2 h-2 rounded-full bg-brand relative flex h-3 w-3">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-3 w-3 bg-brand"></span>
+                    </span>
+                    <span>Systems Operational</span>
+                </div>
+                
+                <h1 class="text-5xl lg:text-7xl font-heading font-bold text-typography leading-[1.1]">
+                    Streavo <span class="relative inline-block text-brand">Cloud.<img src="data:image/svg+xml;utf8,%3Csvg viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 15 Q 50 0 100 15' stroke='%232ECC71' stroke-width='4' fill='transparent'/%3E%3C/svg%3E" class="absolute -bottom-2 left-0 w-full h-auto opacity-30 z-[-1]" alt=""/></span>
+                </h1>
+                
+                <p class="text-xl text-typography-light font-medium max-w-lg leading-relaxed">
+                    La potencia de un gigante internacional orquestada por tu partner local en la nube.
+                </p>
+
+                <p class="text-lg text-typography-light leading-relaxed">
+                    No tenemos grandes armarios de granjas de servidores en nuestras oficinas; <strong>somos arquitectos</strong>. Subcontratamos la potencia bruta y la infraestructura física de los referentes mundiales y construimos toda tu red segura por encima de estos.
+                </p>
+            </div>
+            
+            <div class="w-full lg:w-1/2 relative flex justify-center lg:justify-end reveal reveal-delay-200">
+                <div class="absolute inset-0 bg-white/60 backdrop-blur-md rounded-full transform rotate-3 scale-95 z-0 shadow-lg blur-xl filter"></div>
+                <div class="relative z-10 w-full max-w-lg p-6 animate-float">
+                    <img src="./assets/cloud_illustration.png" alt="Cloud Infrastructure" class="w-full h-auto illustration-blend">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- El Mantra (Moved from Home) -->
+    <section id="manifiesto" class="py-32 relative overflow-hidden bg-brand mt-10">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjMWFlMzVlIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMOCA4Wk04IDBMMCA4WiIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD4KPC9zdmc+')]"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-16">
+            
+            <div class="w-full lg:w-5/12 reveal">
+                <div class="relative bg-white p-6 rounded-3xl transform rotate-2">
+                    <img src="./assets/values_illustration.png" alt="Soporte Humano Ilustración" class="relative z-10 w-full h-auto p-4 round-3xl illustration-blend animate-float">
+                </div>
+            </div>
+
+            <div class="w-full lg:w-7/12 text-left reveal reveal-delay-200">
+                <h2 class="font-heading font-bold text-4xl lg:text-5xl mb-6 text-white">Nuestra filosofía artesana</h2>
+                
+                <p class="text-xl text-cream/90 leading-relaxed mb-10">
+                    Nacimos con una mentalidad muy clara. Cansados de las facturas hiper-infladas o presupuestos oscuros por cosas técnicas que la mayoría de los negocios no necesitan en su día a día.
+                </p>
+
+                <!-- Mantra Blockquote -->
+                <blockquote class="bg-white p-10 rounded-2xl border-l-8 border-brand-light shadow-2xl text-left transform -rotate-1 relative">
+                    <svg class="absolute top-6 left-6 w-12 h-12 text-brand/10 transform rotate-180" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                        <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H8.6c.8-2.3 3-4 5.4-4V8zm16 0c-3.3 0-6 2.7-6 6v10h10V14h-5.4c.8-2.3 3-4 5.4-4V8z"></path>
+                    </svg>
+                    <p class="text-2xl md:text-3xl font-heading font-bold text-typography relative z-10 pl-10 leading-snug">
+                        "Paga por lo que ofreces y deja de hacerlo por lo que tienes."
+                    </p>
+                    <footer class="mt-6 pl-10 text-typography-light font-semibold text-sm flex items-center gap-3 uppercase tracking-wider">
+                        <div class="w-8 h-[2px] bg-brand"></div> El Mantra de Streavo
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infraestructura Features -->
+    <section id="infraestructura" class="py-24 relative bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <h2 class="font-heading font-bold text-4xl mb-6">Qué incluye Streavo Cloud</h2>
+                <p class="text-lg text-typography-light">No importa si solo quieres guardar los Excel de tu bodega de forma segura o si necesitas transmitir vídeo a 10.000 clientes concurrentes, gestionamos el pipeline entero.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 reveal">
+                <div class="bg-cream rounded-3xl p-10 border border-gray-100 hover:border-brand/30 transition-colors">
+                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl mb-4">Gestión Delegada (DevOps)</h3>
+                    <p class="text-typography-light leading-relaxed">Nos ocupamos del aprovisionamiento, la seguridad, los certificados SSL y el balanceo de carga. Tú te ocupas de tu negocio.</p>
+                </div>
+
+                <div class="bg-cream rounded-3xl p-10 border border-gray-100 hover:border-brand/30 transition-colors">
+                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl mb-4">Video & CDN Interno</h3>
+                    <p class="text-typography-light leading-relaxed">Infraestructura propia para entregar contenido a la velocidad de la luz. Ideal para negocios que manejen muchísimo volumen multimedia pesado sin querer depender de monopolios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section id="contacto" class="py-24 bg-brand relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjMWFlMzVlIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMOCA4Wk04IDBMMCA4WiIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD4KPC9zdmc+')]"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10 reveal">
+            <h2 class="font-heading font-bold text-4xl md:text-5xl text-white mb-6">Tu propia nube, gestionada por artesanos.</h2>
+            <p class="text-cream text-xl font-medium mb-10 max-w-2xl mx-auto">Escríbenos, tomamos un café y vemos cómo nuestra infraestructura Cloud puede ser el motor de tu libertad digital.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://api.whatsapp.com/send/?phone=34623935683&text=Hola%21+Vengo+de+la+Web+Streavo+y+me+gustar%C3%ADa+informaci%C3%B3n.&type=phone_number&app_absent=0" target="_blank" class="bg-white text-brand px-10 py-5 rounded-xl font-bold hover:bg-cream shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-lg w-full sm:w-auto">
+                    Contactar con el equipo
+                </a>
+                <span class="text-cream/80 text-lg mt-4 sm:mt-0">o llámanos al <strong class="text-white text-xl">623 93 56 83</strong> <br class="sm:hidden"> <span class="text-sm opacity-80">(15:00 a 20:00, L-V)</span></span>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-[#111827] pt-20 pb-10 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <!-- Branding -->
+                <div class="col-span-1 md:col-span-1">
+                    <a href="index.html" class="flex items-center mb-6">
+                        <img src="https://i.imgur.com/5xDYiiz.png" alt="Streavo Logo" class="h-10 w-auto">
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Construimos el puente entre la infraestructura tecnológica avanzada y las PYMES, con dedicación artesana y visión global.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-heading font-semibold text-white mb-5 text-lg">Navegación</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-brand-light transition-colors flex items-center gap-2"><div class="w-1 h-1 rounded-full bg-transparent hover:bg-brand-light"></div>Inicio</a></li>
+                        <li><a href="servicios.html" class="hover:text-brand-light transition-colors flex items-center gap-2"><div class="w-1 h-1 rounded-full bg-transparent hover:bg-brand-light"></div>Servicios</a></li>
+                        <li><a href="index.html#contacto" class="hover:text-brand-light transition-colors flex items-center gap-2"><div class="w-1 h-1 rounded-full bg-transparent hover:bg-brand-light"></div>Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-heading font-semibold text-white mb-5 text-lg">Legal</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="politica-privacidad.html" class="hover:text-brand-light transition-colors">Política de Privacidad</a></li>
+                        <li><a href="aviso-legal.html" class="hover:text-brand-light transition-colors">Aviso Legal</a></li>
+                        <li><a href="cookies.html" class="hover:text-brand-light transition-colors">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800/80 pt-8 mt-4 flex justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm font-medium">
+                    &copy; 2025-2026 Streavo Cloud. Diseñado con ♥ en el Penedès.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CSS Scroll Animation Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-12');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const revealElements = document.querySelectorAll('.reveal');
+            revealElements.forEach(el => {
+                el.classList.add('opacity-0', 'translate-y-12', 'transition-all', 'duration-[800ms]', 'ease-out');
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

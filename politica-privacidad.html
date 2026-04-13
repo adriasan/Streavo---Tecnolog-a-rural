@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Streavo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: { DEFAULT: '#F9F8F3', dark: '#EBE9DD' },
+                        brand: { DEFAULT: '#1A4D2E', light: '#2ECC71', dark: '#133921' },
+                        typography: { DEFAULT: '#2C3E50', light: '#4A5568' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Poppins', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F9F8F3; color: #2C3E50; font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-cream text-typography relative overflow-x-hidden selection:bg-brand selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-cream/80 backdrop-blur-lg border-b border-gray-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center cursor-pointer group">
+                    <img src="https://i.imgur.com/5xDYiiz.png" alt="Streavo Logo" class="h-8 w-auto">
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-typography font-medium hover:text-brand transition-colors">← Volver al Inicio</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24 md:pt-48 md:pb-32 px-4 max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-heading font-bold mb-10 text-brand">Política de Privacidad</h1>
+        
+        <div class="prose prose-lg text-typography-light space-y-6">
+            <p>Bienvenido a Streavo. Respetamos tu privacidad y estamos comprometidos a proteger tus datos personales. Esta Política de Privacidad te informará sobre cómo cuidamos de tus datos cuando visitas nuestra web y te informará sobre tus derechos de privacidad.</p>
+
+            <h2 class="text-2xl font-bold text-typography mt-10 mb-4">1. Responsable del Tratamiento</h2>
+            <p>De acuerdo con lo establecido en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD), informamos que los datos personales recogidos serán tratados bajo la responsabilidad de:</p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li><strong>Identidad:</strong> Google Ireland Limited (Delegado de datos)</li>
+                <li><strong>NIF:</strong> IE6388047V</li>
+                <li><strong>Dirección:</strong> Gordon House, Barrow Street, Dublín 4, Irlanda</li>
+                <li><strong>Correo electrónico:</strong> streavo@proton.me</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold text-typography mt-10 mb-4">2. Finalidad del Tratamiento</h2>
+            <p>En Streavo, tratamos los datos personales con el único fin de:</p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Responder a tus consultas enviadas a través de nuestro correo de contacto directo (<code>streavo@proton.me</code>).</li>
+                <li>Gestionar encargos, solicitudes comerciales o propuestas de servicios tecnológicos.</li>
+            </ul>
+            <p>Dado que no tenemos un formulario automatizado en la web pública que recabe información estructurada en bases de datos para boletines o newsletters automatizados, tus datos se tratan mediante gestores de correo electrónico básicos como canal de servicio al cliente.</p>
+
+            <h2 class="text-2xl font-bold text-typography mt-10 mb-4">3. Conservación de los datos</h2>
+            <p>Tus datos se conservarán mientras exista un interés mutuo para mantener el fin del tratamiento o cuando sea necesario para cumplir con obligaciones legales. Cuando ya no sean necesarios para tal fin, se suprimirán con de seguridad adecuadas para garantizar su destrucción total.</p>
+
+            <h2 class="text-2xl font-bold text-typography mt-10 mb-4">4. Comunicación de datos</h2>
+            <p>No se comunicarán datos a terceros, salvo obligación legal, o en el caso de que sea estrictamente necesario para la prestación de un servicio tecnológico subcontratado (ej. registro de dominios a tu nombre o alta en servidores de Streavo Cloud), lo cual se comunicará y acordará de forma previa y explícita contigo.</p>
+
+            <h2 class="text-2xl font-bold text-typography mt-10 mb-4">5. Tus Derechos</h2>
+            <p>Tienes derecho a obtener confirmación sobre si en Streavo estamos tratando datos personales que te conciernan. Puedes ejercer tus derechos de acceso, rectificación, supresión y portabilidad de tus datos, de limitación y oposición a su tratamiento en la dirección de correo: <strong>streavo@proton.me</strong>.</p>
+        </div>
+    </main>
+
+    <footer class="bg-[#111827] py-10 border-t border-gray-800 text-center">
+        <p class="text-gray-500 text-sm font-medium">
+            &copy; 2025-2026 Streavo. Diseñado con ♥ en el Penedès.
+        </p>
+    </footer>
+
+</body>
+</html>
